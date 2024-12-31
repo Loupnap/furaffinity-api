@@ -1,0 +1,56 @@
+{
+  "name": "furaffinity-api",
+  "version": "4.5.1",
+  "description": "FurAffinity wrapper for Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "tsc-watch --compiler typescript/bin/tsc",
+    "build": "rimraf ./dist && tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/recallfuture/furaffinity-api"
+  },
+  "keywords": [
+    "furaffinity"
+  ],
+  "contributors": [
+    "mcrocks999",
+    "recallfuture",
+    "radarcz"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.10",
+    "furaffinity-api": "^4.5.1",
+    "got": "^11.8.3",
+    "hooman": "^1.2.6",
+    "hpagent": "^0.1.2",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.pickby": "^4.5.0",
+    "socks-proxy-agent": "^6.2.0-beta.0",
+    "tough-cookie": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/chai": "^4.2.9",
+    "@types/cheerio": "0.22.21",
+    "@types/cookiejar": "^2.1.2",
+    "@types/jest": "^27.0.1",
+    "@types/lodash.clonedeep": "^4.5.6",
+    "@types/node": "^10.12.18",
+    "@types/tough-cookie": "^4.0.1",
+    "chai": "^4.2.0",
+    "jest": "^27.0.6",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.7.0",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.6.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
